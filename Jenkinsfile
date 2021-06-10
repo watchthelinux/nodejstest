@@ -1,10 +1,10 @@
 pipeline {
-  agent {
-    node {
-      label 'test'
+    agent {
+        docker {
+            image 'nodetest:latest' 
+            args '-p 3000:3000' 
+        }
     }
-
-  }
   stages {
     stage('Clone Repository for test') {
       steps {
