@@ -20,7 +20,7 @@ pipeline {
 
     stage('Deploy on Live through AWX') {
       steps {
-        ansibleTower(jobTags: 'Test Deploy', jobTemplate: '9', jobType: 'run', towerCredentialsId: 'f0657fe7-be6c-4527-8810-5a218852c464', towerLogLevel: 'full', towerServer: 'Ansible AWX', verbose: true)
+        ansibleTower(jobTags: 'Test Deploy', jobTemplate: '9', jobType: 'run', towerCredentialsId: 'af774254-7d1e-41de-904c-682857dbd8ef', towerLogLevel: 'full', towerServer: 'Ansible AWX', verbose: true)
       }
     }
 
